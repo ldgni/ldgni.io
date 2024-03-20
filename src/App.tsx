@@ -8,7 +8,7 @@ export default function App() {
       id: 1,
       name: "workit",
       url: "https://ldgni.github.io/workit-landing-page/",
-      description: "A landing page for a workout app",
+      description: "A landing page for a data app",
     },
     {
       id: 2,
@@ -30,8 +30,8 @@ export default function App() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <div className="container max-w-xl flex-grow p-8">
+    <>
+      <div className="container max-w-xl p-8">
         <motion.header
           className="mb-8 flex items-center justify-between"
           initial="hidden"
@@ -73,12 +73,6 @@ export default function App() {
           </ul>
         </motion.main>
       </div>
-      <footer className="border-t border-accent text-sm text-secondary">
-        <div className="container flex max-w-xl justify-between px-8 py-2">
-          <p className="font-cursive">Luca Di Gianni</p>
-          <p>&copy; 2024</p>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }
