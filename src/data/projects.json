@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "workit",
+    "url": "https://ldgni.github.io/workit-landing-page/",
+    "description": "A landing page for a data app"
+  },
+  {
+    "id": 2,
+    "name": "equalizer",
+    "url": "https://ldgni.github.io/equalizer-landing-page/",
+    "description": "A landing page for a music app"
+  },
+  {
+    "id": 3,
+    "name": "pod",
+    "url": "https://ldgni.github.io/pod-request-access-landing-page/",
+    "description": "A landing page for a podcast app"
+  }
+]

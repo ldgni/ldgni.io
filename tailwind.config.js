@@ -5,10 +5,11 @@ export default {
     extend: {
       backgroundColor: {
         primary: "#111110",
+        accent: "#222222",
       },
       colors: {
         primary: "#fafafa",
-        secondary: "#a1a1aa",
+        secondary: "#b5b3ad",
         accent: "#505050",
       },
       fontFamily: {
