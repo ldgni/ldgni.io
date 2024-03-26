@@ -5,5 +5,22 @@ module.exports = {
   singleQuote: false,
   htmlWhitespaceSensitivity: "ignore",
   bracketSameLine: true,
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+  ],
+  importOrder: [
+    "^(react/(.*)$)|^(react$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/utils/(.*)$",
+    "^@/lib/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/components/ui/(.*)$",
+    "^@/components/(.*)$",
+    "^@/styles/(.*)$",
+    "^@/pages/(.*)$",
+    "",
+    "^[./]",
+  ],
 };
