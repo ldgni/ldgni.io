@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaGithub } from "react-icons/fa";
+
 import projects from "./data/projects.json";
 import { Project } from "./types";
 
