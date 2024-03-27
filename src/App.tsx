@@ -11,7 +11,7 @@ export default function App() {
   };
 
   return (
-    <div className="container max-w-md p-8">
+    <div className="container max-w-lg p-8">
       <motion.header
         className="mb-8 flex items-center justify-between"
         initial="hidden"
