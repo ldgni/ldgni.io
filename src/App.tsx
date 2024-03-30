@@ -11,7 +11,7 @@ export default function App() {
   };
 
   return (
-    <div className="container max-w-lg p-8">
+    <div className="container max-w-xl p-8">
       <motion.header
         className="mb-8 flex items-center justify-between"
         initial="hidden"
@@ -50,8 +50,12 @@ export default function App() {
           {projects.map((project: Project) => (
             <li key={project.id}>
               <a href={project.url} target="_blank">
-                <div className="inline-flex items-center gap-2 transition-all hover:scale-105 hover:opacity-75">
-                  &#8599;
+                <div className="inline-flex items-center gap-4 rounded-md px-3 py-2 opacity-75 saturate-0 transition-all hover:bg-[#8881] hover:opacity-100 hover:saturate-100">
+                  <img
+                    src={project.logo}
+                    alt={`${project.name}'s logo`}
+                    className="size-8"
+                  />
                   <div>
                     <h3 className="font-semibold">{project.name}</h3>
                     <p className="text-secondary">{project.description}</p>
