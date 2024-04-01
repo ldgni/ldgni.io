@@ -5,5 +5,12 @@
     "url": "https://psgoat.ldgni.io/",
     "description": "Real-time tracking of PSG's fixtures, results and standings",
     "logo": "images/psgoat.png"
+  },
+  {
+    "id": 2,
+    "name": "idea",
+    "url": "https://idea.ldgni.io/",
+    "description": "Brochure website of an ice-cream shop",
+    "logo": "images/idea.png"
   }
 ]
