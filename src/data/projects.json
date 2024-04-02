@@ -3,7 +3,7 @@
     "id": 1,
     "name": "PSGoat",
     "url": "https://psgoat.ldgni.io/",
-    "description": "Real-time tracking of PSG's fixtures, results and standings",
+    "description": "Web app tracking PSG's performance",
     "logo": "images/psgoat.png"
   },
   {
