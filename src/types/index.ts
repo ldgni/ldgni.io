@@ -3,5 +3,6 @@ export interface Project {
   name: string;
   url: string;
   description: string;
+  category: string;
   logo: string;
 }

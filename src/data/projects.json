@@ -4,13 +4,15 @@
     "name": "Pulse",
     "url": "https://pulse.ldgni.io/",
     "description": "Web app tracking PSG's performance",
-    "logo": "images/pulse.png"
+    "category": "web",
+    "logo": "/images/pulse.png"
   },
   {
     "id": 2,
     "name": "idea",
     "url": "https://idea.ldgni.io/",
     "description": "Brochure website of an ice-cream shop",
-    "logo": "images/idea.png"
+    "category": "web",
+    "logo": "/images/idea.png"
   }
 ]
