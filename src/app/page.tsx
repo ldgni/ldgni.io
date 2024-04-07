@@ -6,7 +6,7 @@ import { Project } from "@/types";
 
 export default function Home() {
   return (
-    <div className="container max-w-lg py-4 lg:mt-24">
+    <div className="container max-w-lg py-4 lg:mt-20">
       <header className="mb-8 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-extrabold">Luca Di Gianni</h1>
@@ -74,7 +74,7 @@ export default function Home() {
           ))}
         </ul>
       </main>
-      <footer className="container mt-20">
+      <footer className="container mt-8">
         <small>&copy; 2024 Luca Di Gianni</small>
       </footer>
     </div>
