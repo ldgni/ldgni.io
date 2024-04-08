@@ -6,7 +6,7 @@ import { Project } from "@/types";
 
 export default function Home() {
   return (
-    <div className="container max-w-lg py-4 lg:mt-20">
+    <div className="container max-w-lg py-4 sm:py-8 md:py-12 lg:py-16 xl:py-20">
       <header className="mb-8 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-extrabold">Luca Di Gianni</h1>
@@ -40,13 +40,12 @@ export default function Home() {
             or technical troubleshooting.
           </p>
           <p>
-            {" "}
             My approach is rooted in minimalism, focusing on clean and efficient
             solutions.
           </p>
         </div>
         <h2 className="mb-4 text-lg font-semibold">Projects</h2>
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-4">
           {projects.map((project: Project) => (
             <li
               key={project.id}
