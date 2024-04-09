@@ -47,10 +47,11 @@ export default function Home() {
         <h2 className="mb-4 text-lg font-semibold">Projects</h2>
         <ul className="flex flex-col gap-4">
           {projects.map((project: Project) => (
-            <li
-              key={project.id}
-              className="rounded-xl px-4 py-2 opacity-75 saturate-0 transition-all hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-900">
-              <a href={project.url} target="_blank">
+            <li key={project.id}>
+              <a
+                href={project.url}
+                target="_blank"
+                className="block rounded-xl px-4 py-2 opacity-75 saturate-0 transition-all hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-900">
                 <div className="flex items-center gap-4">
                   <Image
                     src={project.logo}
