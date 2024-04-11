@@ -4,25 +4,25 @@ Personal portfolio built with [Next.js](https://nextjs.org/), using [React](http
 
 ## Running Locally
 
-1. Clone the repository:
+1. Clone the repository
 
 ```sh
 git clone https://github.com/ldgni/ldgni.io.git
 ```
 
-2. Navigate inside the repository:
+2. Navigate inside the repository
 
 ```sh
 cd ldgni.io
 ```
 
-3. Install dependencies:
+3. Install dependencies
 
 ```sh
 npm install
 ```
 
-4. Start the development server:
+4. Start the development server
 
 ```sh
 npm run dev
