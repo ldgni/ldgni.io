@@ -39,10 +39,6 @@ export default function Home() {
             to learn and solve problems, whether it&apos;s through programming
             or technical troubleshooting.
           </p>
-          <p>
-            My approach is rooted in minimalism, focusing on clean and efficient
-            solutions.
-          </p>
         </div>
         <h2 className="mb-4 text-lg font-semibold">Projects</h2>
         <ul className="flex flex-col gap-4">
