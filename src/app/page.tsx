@@ -31,13 +31,13 @@ export default function Home() {
       <main>
         <div className="mb-8 flex flex-col gap-4">
           <p>
-            I&apos;m a software technician and frontend developer who enjoys
-            building digital solutions.
+            I&apos;m a software technician and frontend developer passionate
+            about crafting digital solutions.
           </p>
           <p>
-            I like to keep things simple and functional. I&apos;m always eager
-            to learn and solve problems, whether it&apos;s through programming
-            or technical troubleshooting.
+            I prioritize simplicity and functionality, constantly seeking to
+            expand my knowledge and tackle challenges, be it through programming
+            or technical problem-solving.
           </p>
         </div>
         <h2 className="mb-4 text-lg font-semibold">Projects</h2>
