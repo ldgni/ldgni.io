@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
+  openGraph: {
+    title: "Luca Di Gianni",
+    description: "Software technician and frontend developer",
+    url: "https://ldgni.io",
+    siteName: "Luca Di Gianni",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
