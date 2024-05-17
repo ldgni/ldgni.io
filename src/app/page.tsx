@@ -2,7 +2,15 @@ import { Github, Mail } from "lucide-react";
 import Image from "next/image";
 
 import projects from "@/data/projects.json";
-import { Project } from "@/types";
+
+interface Project {
+  id: number;
+  url: string;
+  logo: string;
+  name: string;
+  description: string;
+  category: string;
+}
 
 export default function Home() {
   return (
