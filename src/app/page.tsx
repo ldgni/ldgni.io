@@ -18,7 +18,7 @@ export default function Home() {
       <header className="mb-8 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-extrabold">Luca Di Gianni</h1>
-          <p className="text-sm">Software Technician</p>
+          <p className="text-sm">IT Technician</p>
         </div>
         <div className="flex gap-2">
           <a
@@ -39,8 +39,8 @@ export default function Home() {
       <main>
         <div className="mb-8 flex flex-col gap-4">
           <p>
-            I&apos;m a software technician and frontend developer passionate
-            about crafting digital solutions.
+            I&apos;m an IT technician and frontend developer passionate about
+            crafting digital solutions.
           </p>
           <p>
             I prioritize simplicity and functionality, constantly seeking to

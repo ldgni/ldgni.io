@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luca Di Gianni",
-  description: "Software technician and frontend developer",
+  description: "IT technician and frontend developer",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Luca Di Gianni",
-    description: "Software technician and frontend developer",
+    description: "IT technician and frontend developer",
     url: "https://ldgni.io",
     siteName: "Luca Di Gianni",
     type: "website",
