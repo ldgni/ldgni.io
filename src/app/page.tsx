@@ -39,7 +39,7 @@ export default function Home() {
       <main>
         <div className="mb-8 flex flex-col gap-4">
           <p>
-            I&apos;m an IT technician and frontend developer passionate about
+            I&apos;m an IT technician and web developer passionate about
             crafting digital solutions.
           </p>
           <p>
