@@ -1,8 +1,12 @@
-import "@/styles/globals.css";
+import "./globals.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+
+import Container from "@/components/container";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +38,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} bg-light text-sm text-dark antialiased sm:text-base dark:bg-dark dark:text-light`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Container>
+            <Header />
+            {children}
+            <Footer />
+          </Container>
+        </ThemeProvider>
       </body>
     </html>
   );
