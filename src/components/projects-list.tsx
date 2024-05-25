@@ -7,7 +7,7 @@ const projects = [
     url: "https://pulse.ldgni.io/",
     description: "Web app tracking PSG's performance",
     category: "web",
-    logo: "/images/logos/pulse.webp",
+    logo: "/images/pulse.webp",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     url: "https://mood.ldgni.io/",
     description: "Brochure website of an ice-cream shop",
     category: "web",
-    logo: "/images/logos/mood.webp",
+    logo: "/images/mood.webp",
   },
 ];
 
