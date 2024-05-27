@@ -30,7 +30,7 @@ interface Project {
 
 export default function ProjectsList() {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className="mb-8 flex flex-col gap-4">
       {projects.map((project: Project) => (
         <li key={project.id}>
           <a
@@ -41,6 +41,7 @@ export default function ProjectsList() {
               <Image
                 src={project.logo}
                 alt={project.name}
+                className="size-8"
                 width={32}
                 height={32}
               />
