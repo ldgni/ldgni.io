@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className="flex gap-2">
         <Link href="/" className="group font-semibold">
           → Go back to home
-          <span className="block h-0.5 max-w-0 bg-neutral-500 duration-500 group-hover:max-w-full"></span>
+          <span className="block h-0.5 max-w-0 bg-neutral-500 duration-300 group-hover:max-w-full"></span>
         </Link>
       </p>
     </main>
