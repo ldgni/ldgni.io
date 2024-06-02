@@ -1,6 +1,5 @@
 import "./globals.css";
 
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 
@@ -10,7 +9,7 @@ import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Luca Di Gianni",
   description:
     "Luca Di Gianni is an IT technician and web developer passionate about crafting digital solutions.",
@@ -29,11 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
