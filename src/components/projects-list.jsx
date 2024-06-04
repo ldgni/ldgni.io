@@ -21,7 +21,7 @@ const projects = [
 
 export default function ProjectsList() {
   return (
-    <ul className="mb-8 flex flex-col gap-4">
+    <ul className="flex flex-col gap-4">
       {projects.map((project) => (
         <li key={project.id}>
           <a
