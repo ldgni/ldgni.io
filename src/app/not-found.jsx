@@ -6,7 +6,7 @@ export default function NotFound() {
       <p>This page could not be found.</p>
       <Link
         href="/"
-        className="font-semibold underline-offset-4 hover:underline">
+        className="font-semibold hover:underline hover:underline-offset-4">
         → Go back to home
       </Link>
     </main>

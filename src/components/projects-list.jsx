@@ -27,7 +27,7 @@ export default function ProjectsList() {
           <a
             href={project.url}
             target="_blank"
-            className="block rounded-xl px-4 py-2 opacity-75 saturate-0 transition-all hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-800">
+            className="block rounded-xl px-4 py-2 opacity-75 saturate-0 transition hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
               <Image
                 src={project.logo}
