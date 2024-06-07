@@ -1,6 +1,6 @@
 # ldgni.io
 
-Personal portfolio built with [Next.js](https://nextjs.org/), using [React](https://react.dev/) and [Tailwind CSS](https://tailwindcss.com/), deployed to [Vercel](https://vercel.com/).
+> My portfolio
 
 ## Running Locally
 
