@@ -5,8 +5,8 @@ export default function Home() {
     <main>
       <div className="mb-8 flex flex-col gap-4">
         <p>
-          I&apos;m an IT technician and web developer passionate about crafting
-          digital solutions.
+          I&apos;m an IT technician and web developer dedicated to crafting
+          effective digital solutions.
         </p>
         <p>
           I prioritize simplicity and functionality, constantly seeking to

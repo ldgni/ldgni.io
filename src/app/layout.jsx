@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Luca Di Gianni",
   description:
-    "Luca Di Gianni is an IT technician and web developer passionate about crafting digital solutions.",
+    "Luca Di Gianni is an IT technician and web developer dedicated to crafting effective digital solutions.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Luca Di Gianni",
     description:
-      "Luca Di Gianni is an IT technician and web developer passionate about crafting digital solutions.",
+      "Luca Di Gianni is an IT technician and web developer dedicated to crafting effective digital solutions.",
     url: "https://ldgni.io",
     siteName: "Luca Di Gianni",
     type: "website",
