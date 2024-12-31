@@ -1,4 +1,5 @@
-import Image from "next/image";
+import MoodLogo from "@/assets/images/mood-logo.webp";
+import PulseLogo from "@/assets/images/pulse-logo.webp";
 
 const projects = [
   {
@@ -7,7 +8,7 @@ const projects = [
     url: "https://pulse.ldgni.io/",
     description: "Web app tracking PSG's performance",
     category: "web",
-    logo: "/images/pulse-logo.webp",
+    logo: PulseLogo,
   },
   {
     id: 2,
@@ -15,7 +16,7 @@ const projects = [
     url: "https://mood.ldgni.io/",
     description: "Brochure website of an ice-cream shop",
     category: "web",
-    logo: "/images/mood-logo.webp",
+    logo: MoodLogo,
   },
 ];
 
@@ -27,15 +28,9 @@ export default function ProjectsList() {
           <a
             href={project.url}
             target="_blank"
-            className="block rounded-xl px-4 py-2 opacity-75 saturate-0 transition hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-800">
+            className="block rounded-lg px-4 py-2 opacity-75 saturate-0 transition duration-300 hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
-              <Image
-                src={project.logo}
-                alt={project.name}
-                className="size-8"
-                width={32}
-                height={32}
-              />
+              <img src={project.logo} alt={project.name} className="size-8" />
               <div>
                 <h3 className="font-semibold">{project.name}</h3>
                 <p className="text-neutral-700 dark:text-neutral-300">
