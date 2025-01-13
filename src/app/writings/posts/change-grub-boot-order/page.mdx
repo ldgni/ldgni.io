@@ -24,14 +24,16 @@ sudo nano /etc/default/grub
 
 Find the line that starts with `GRUB_DEFAULT=` and change the value to the index of the OS you want to be the default boot option. The index starts at 0, so the first OS in the list is 0, the second OS is 1, and so on.
 
-If you don't know the index of the OS you want to set as the default, you can find it by simply rebooting your system and checking the GRUB menu. Start counting from 0, and you'll find the index of the OS you want to set as the default.
+If you don't know the index of the OS you want to set as the default, you can find it by simply rebooting your system **and** checking the GRUB menu. Start counting from 0, and you'll find the index of the OS you want to set as the default.
 
 <Image
   src={screenshot}
   alt="Always show scrollbars on macOS"
-  width={608}
-  height={321}
+  width={640}
+  height={337}
+  placeholder="blur"
   className="rounded-sm"
+  priority
 />
 
 If I wish to set Windows as the default boot option, I would change the value to 2 in my case:
