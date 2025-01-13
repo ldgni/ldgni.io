@@ -1,19 +1,19 @@
-# Next.js Starter
+# ldgni.io
 
-> [Next.js](https://nextjs.org/) starter template using the [App Router](https://nextjs.org/docs/app) with [TypeScript](https://www.typescriptlang.org/) and [Tailwind CSS](https://tailwindcss.com/)
+> My portfolio
 
 ## Running Locally
 
 1. Clone the repository
 
 ```sh
-git clone https://github.com/ldgni/next-starter.git
+git clone https://github.com/ldgni/ldgni.io
 ```
 
 2. Navigate inside the repository
 
 ```sh
-cd next-starter
+cd ldgni.io
 ```
 
 3. Install dependencies
