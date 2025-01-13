@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
-        <h1 className="text-xl font-extrabold">Luca Di Gianni</h1>
-        <p className="text-sm">IT Technician</p>
+        <h1 className="text-lg font-extrabold sm:text-xl">Luca Di Gianni</h1>
+        <p>IT Technician</p>
       </div>
       <div className="flex gap-2">
         <a

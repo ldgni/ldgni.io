@@ -1,0 +1,52 @@
+import Image from "next/image";
+
+import screenshot from "./ubuntu-time-settings.png";
+import screenshot2 from "./windows-time-settings.jpg";
+
+<h1>Fix wrong time when dual booting</h1>
+
+<hr />
+
+When you dual boot Windows and Ubuntu, you may notice that the time displayed in Ubuntu or Windows is incorrect. This is because Windows uses local time by default, while Ubuntu uses UTC time.
+
+There are multiple ways to fix this issue. Here are two methods to set the time correctly on both operating systems.
+
+<h2>1. Use local time in Ubuntu</h2>
+
+The easiest way to fix the time issue is to configure Ubuntu to use local time. You can do this by running the following command in the terminal:
+
+```bash
+sudo timedatectl set-local-rtc 1
+```
+
+That's it. Now if you reboot your system, the time should be displayed correctly in both operating systems.
+
+<h2>2. Set time and date automatically on both OS</h2>
+
+Another way to fix the issue is to set the time and date automatically on both operating systems.
+
+<h3>Ubuntu</h3>
+
+Go to your Date & Time settings and enable "**Automatic Date & Time**" and "**Automatic Time Zone**".
+
+<Image
+  src={screenshot}
+  alt="Ubuntu date and time settings"
+  width={800}
+  height={600}
+  className="rounded-sm"
+/>
+
+<h3>Windows</h3>
+
+Go to your Date & time settings and enable "**Set time automatically**" and "**Set time zone automatically**".
+
+<Image
+  src={screenshot2}
+  alt="Windows date and time settings"
+  width={800}
+  height={600}
+  className="rounded-sm"
+/>
+
+Now both operating systems should display the correct time.

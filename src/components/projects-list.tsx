@@ -1,5 +1,7 @@
-import MoodLogo from "@/assets/images/mood-logo.webp";
-import PulseLogo from "@/assets/images/pulse-logo.webp";
+import Image from "next/image";
+
+import MoodLogo from "../../public/images/mood-logo.webp";
+import PulseLogo from "../../public/images/pulse-logo.webp";
 
 const projects = [
   {
@@ -30,7 +32,7 @@ export default function ProjectsList() {
             target="_blank"
             className="block rounded-lg px-4 py-2 opacity-75 saturate-0 transition duration-300 hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
-              <img src={project.logo} alt={project.name} className="size-8" />
+              <Image src={project.logo} alt={project.name} className="size-8" />
               <div>
                 <h3 className="font-semibold">{project.name}</h3>
                 <p className="text-neutral-700 dark:text-neutral-300">

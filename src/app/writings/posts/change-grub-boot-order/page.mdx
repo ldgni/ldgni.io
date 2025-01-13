@@ -1,0 +1,49 @@
+import Image from "next/image";
+
+import screenshot from "./grub-boot-loader.jpg";
+
+<h1>Change GRUB boot order</h1>
+
+<hr />
+
+If you have multiple operating systems installed on your system, you can change the boot order in GRUB to make a specific OS the default boot option. This can be useful if you want to boot into a specific OS by default without having to manually select it each time your system starts up.
+
+For my specific case, I have a dual-boot setup with Ubuntu and Windows, and I want Windows to be the default boot option in GRUB.
+
+First of all, let's make a backup of the GRUB configuration file:
+
+```bash
+sudo cp /etc/default/grub /etc/default/grub.bak
+```
+
+Now, open the GRUB configuration file in a text editor (we'll use **nano** here):
+
+```bash
+sudo nano /etc/default/grub
+```
+
+Find the line that starts with `GRUB_DEFAULT=` and change the value to the index of the OS you want to be the default boot option. The index starts at 0, so the first OS in the list is 0, the second OS is 1, and so on.
+
+If you don't know the index of the OS you want to set as the default, you can find it by simply rebooting your system and checking the GRUB menu. Start counting from 0, and you'll find the index of the OS you want to set as the default.
+
+<Image
+  src={screenshot}
+  alt="Always show scrollbars on macOS"
+  width={800}
+  height={600}
+  className="rounded-sm"
+/>
+
+If I wish to set Windows as the default boot option, I would change the value to 2 in my case:
+
+```bash
+GRUB_DEFAULT=2
+```
+
+Save the changes and exit the text editor. Finally, update the GRUB configuration by running:
+
+```bash
+sudo update-grub
+```
+
+Now, when you restart your system, the OS you selected in the GRUB configuration file should be the default boot option.
