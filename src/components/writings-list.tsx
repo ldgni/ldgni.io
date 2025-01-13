@@ -22,10 +22,6 @@ const posts = [
     title: "Fix USB drive split into multiple partitions",
     url: "/writings/posts/fix-usb-multiple-partitions",
   },
-  {
-    title: "macOS development environment setup",
-    url: "/writings/posts/web-dev-setup",
-  },
 ];
 
 export default function WritingsList() {
