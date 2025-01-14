@@ -11,9 +11,12 @@ import Header from "@/components/header";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Luca Di Gianni",
+  title: {
+    default: "Luca Di Gianni",
+    template: "%s - Luca Di Gianni",
+  },
   description:
-    "Luca Di Gianni is an IT technician and web developer dedicated to crafting effective digital solutions.",
+    "I'm an IT technician and developer focused on creating effective and optimal solutions. My interests revolve around emerging technologies, web development, system optimization and cybersecurity.",
 };
 
 export default function RootLayout({

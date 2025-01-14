@@ -3,13 +3,12 @@ export default function Page() {
     <>
       <div className="mb-8 flex flex-col gap-6">
         <p>
-          I&apos;m an IT technician and web developer focused on creating
-          effective digital solutions.
+          I&apos;m an IT technician and developer focused on creating effective
+          and optimal solutions.
         </p>
         <p>
-          I have a keen interest in exploring emerging technologies,
-          understanding system architectures, and finding innovative ways to
-          optimize workflows.
+          My interests revolve around emerging technologies, web development,
+          system optimization and cybersecurity.
         </p>
         <p>
           I prioritize simplicity and functionality, constantly seeking to
