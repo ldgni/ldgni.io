@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     name: "Mood",
-    url: "https://mood.ldgni.io/",
+    url: "https://mood-prod.netlify.app/",
     description: "Brochure website of an ice-cream shop",
     category: "web",
     logo: MoodLogo,
