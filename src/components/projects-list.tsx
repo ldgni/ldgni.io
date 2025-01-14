@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     name: "Pulse",
-    url: "https://pulse.ldgni.io/",
+    url: "https://pulse-live.vercel.app/",
     description: "Web app tracking PSG's performance",
     category: "web",
     logo: PulseLogo,
@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     name: "Mood",
-    url: "https://mood-prod.netlify.app/",
+    url: "https://mood-live.netlify.app/",
     description: "Brochure website of an ice-cream shop",
     category: "web",
     logo: MoodLogo,
