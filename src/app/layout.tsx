@@ -7,7 +7,6 @@ import { ViewTransitions } from "next-view-transitions";
 import Container from "@/components/container";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import NavLinks from "@/components/nav-links";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -29,7 +28,6 @@ export default function RootLayout({
           className={`${inter.className} bg-light text-sm text-dark antialiased sm:text-base md:text-lg dark:bg-dark dark:text-light`}>
           <Container>
             <Header />
-            <NavLinks />
             <main>{children}</main>
             <Footer />
           </Container>
