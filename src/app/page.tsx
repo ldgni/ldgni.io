@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <>
-      <div className="mb-8 flex flex-col gap-4">
+      <div className="mb-8 flex flex-col gap-6">
         <p>
           I&apos;m an IT technician and web developer focused on creating
           effective digital solutions.
