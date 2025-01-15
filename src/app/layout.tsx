@@ -28,7 +28,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="en" className="">
         <body
-          className={`${inter.className} bg-light text-sm tracking-tight text-dark antialiased sm:text-base md:text-lg dark:bg-dark dark:text-light`}>
+          className={`${inter.className} bg-light text-dark antialiased dark:bg-dark dark:text-light`}>
           <Container>
             <Header />
             <main>{children}</main>
