@@ -3,24 +3,24 @@ import { Link } from "next-view-transitions";
 const posts = [
   {
     title: "Change GRUB boot order",
-    url: "/writings/posts/change-grub-boot-order",
+    url: "/writings/change-grub-boot-order",
   },
 
   {
     title: "Always show scrollbars on macOS",
-    url: "/writings/posts/always-show-scrollbars",
+    url: "/writings/always-show-scrollbars",
   },
   {
     title: "Fix unknown at rule @tailwind",
-    url: "/writings/posts/fix-unknown-at-rule-tailwind",
+    url: "/writings/fix-unknown-at-rule-tailwind",
   },
   {
     title: "Fix wrong time when dual booting",
-    url: "/writings/posts/fix-wrong-time-dual-boot",
+    url: "/writings/fix-wrong-time-dual-boot",
   },
   {
     title: "Fix USB drive split into multiple partitions",
-    url: "/writings/posts/fix-usb-multiple-partitions",
+    url: "/writings/fix-usb-multiple-partitions",
   },
 ];
 
