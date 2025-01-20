@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
+import { WebSite, WithContext } from "schema-dts";
 
 import Container from "@/components/container";
 import Footer from "@/components/footer";
@@ -19,6 +20,13 @@ export const metadata: Metadata = {
     "I'm an IT technician and developer focused on creating effective and optimal solutions. My interests revolve around emerging technologies, web development, system optimization and cybersecurity.",
 };
 
+const jsonLd: WithContext<WebSite> = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Luca Di Gianni",
+  url: "https://ldgni.io/",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +34,13 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html lang="en" className="">
+      <html lang="en">
+        <head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+        </head>
         <body
           className={`${inter.className} bg-light text-dark antialiased dark:bg-dark dark:text-light`}>
           <Container>
