@@ -1,6 +1,6 @@
 import { Link } from "next-view-transitions";
 
-export default function NotFound() {
+export default function NotFoundPage() {
   return (
     <>
       <h2>This page doesn&apos;t exist.</h2>
