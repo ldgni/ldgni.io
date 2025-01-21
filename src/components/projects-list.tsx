@@ -3,19 +3,19 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    name: "Mood",
-    url: "https://mood-live.netlify.app/",
-    description: "Brochure website of an ice-cream shop",
-    category: "web",
-    logo: "/images/mood.png",
-  },
-  {
-    id: 2,
     name: "Pulse",
     url: "https://pulse-live.vercel.app/",
     description: "Web app tracking PSG's performance",
     category: "web",
     logo: "/images/pulse.png",
+  },
+  {
+    id: 2,
+    name: "Mood",
+    url: "https://mood-live.netlify.app/",
+    description: "Brochure website of an ice-cream shop",
+    category: "web",
+    logo: "/images/mood.png",
   },
 ];
 
