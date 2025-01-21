@@ -1,4 +1,4 @@
-export default function Page() {
+export default function HomePage() {
   return (
     <div className="mb-8 flex flex-col gap-6">
       <p>
