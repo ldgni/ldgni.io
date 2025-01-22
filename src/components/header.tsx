@@ -16,10 +16,7 @@ export default function Header() {
   return (
     <header>
       <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="text-lg font-extrabold sm:text-xl">Luca Di Gianni</h1>
-          <p>IT Technician</p>
-        </div>
+        <h1 className="text-lg font-extrabold sm:text-xl">Luca Di Gianni</h1>
         <div className="flex gap-2">
           <a
             href="https://github.com/ldgni"

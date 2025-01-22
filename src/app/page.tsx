@@ -6,8 +6,8 @@ export default function HomePage() {
         and optimal solutions.
       </p>
       <p>
-        My interests revolve around emerging technologies, web development,
-        system optimization and cybersecurity.
+        My interests revolve around emerging technologies, system
+        administration, web development and cybersecurity.
       </p>
       <p>
         I prioritize simplicity and functionality, constantly seeking to expand
