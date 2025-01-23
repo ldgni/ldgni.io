@@ -1,0 +1,42 @@
+import Image from "next/image";
+
+import screenshot from "./windows-time-currency.jpg";
+import screenshot2 from "./windows-network-setup.jpg";
+
+export const metadata = {
+  title: "Create a local account on Windows 10/11 without bloatware",
+};
+
+<h1>Create a local account on Windows 10/11 without bloatware</h1>
+
+<hr />
+
+Windows 10/11 comes with a lot of bloatware by default and enforces you to use a Microsoft account when you first set up your computer. This is not ideal for privacy reasons and you might want to use a local account instead.
+
+When you are installing your Windows version, you will be asked to choose your time and currency format. You will have to select **"English (World)"** or **"English (Europe)"**. By doing that, Microsoft will not be able to guess your country and won't give you country-specific bloatware.
+
+<Image
+  src={screenshot}
+  alt="Windows 10/11 time and currency format"
+  placeholder="blur"
+  priority
+/>
+
+After the setup is complete, you will have to configure your OOBE (Out of Box Experience) settings.
+
+It will take a bit to load because it tries to guess your location but since we chose a generic time and currency format, it won't be able to guess it. It will output an error and it's totally fine.
+
+Once it's finished loading and you have access to your keyboard, you will have to press **Shift + F10** to open the command prompt. Type **OOBE\BYPASSNRO** and press Enter.
+
+Your computer will restart and you will be able to create a local account without bloatware by choosing **"I don't have internet"** when you are asked to connect to a network.
+
+<Image
+  src={screenshot2}
+  alt="Windows 10/11 network setup"
+  placeholder="blur"
+  priority
+/>
+
+Proceed with the setup and you will have a local Windows account and no bloatware.
+
+Don't forget to change your time and currency format back to your country's format if you want to use the Microsoft Store or other Microsoft services.

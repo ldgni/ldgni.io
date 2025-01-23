@@ -2,24 +2,27 @@ import { Link } from "next-view-transitions";
 
 const posts = [
   {
-    title: "Change GRUB boot order",
+    title: "Create a local account on Windows 10/11 without bloatware",
+    url: "/writings/windows-local-acc-without-bloat",
+  },
+  {
+    title: "How to change GRUB boot order",
     url: "/writings/change-grub-boot-order",
   },
-
   {
-    title: "Always show scrollbars on macOS",
-    url: "/writings/always-show-scrollbars",
-  },
-  {
-    title: "Fix unknown at rule @tailwind",
+    title: "How to fix unknown at rule @tailwind warning in VSCode",
     url: "/writings/fix-unknown-at-rule-tailwind",
   },
   {
-    title: "Fix wrong time when dual booting",
+    title: "Why you should always show scrollbars on macOS",
+    url: "/writings/always-show-scrollbars",
+  },
+  {
+    title: "How to fix incorrect time when dual booting",
     url: "/writings/fix-wrong-time-dual-boot",
   },
   {
-    title: "Fix USB drive split into multiple partitions",
+    title: "How to fix USB drive split into multiple partitions",
     url: "/writings/fix-usb-multiple-partitions",
   },
 ];
