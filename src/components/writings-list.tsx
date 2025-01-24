@@ -2,15 +2,15 @@ import { Link } from "next-view-transitions";
 
 const posts = [
   {
-    title: "Create a local account on Windows 10/11 without bloatware",
+    title: "Create a local account on Windows without bloatware",
     url: "/writings/windows-local-acc-without-bloat",
   },
   {
-    title: "How to change GRUB boot order",
+    title: "Change GRUB boot order",
     url: "/writings/change-grub-boot-order",
   },
   {
-    title: "How to fix unknown at rule @tailwind warning in VSCode",
+    title: "Fix unknown at rule @tailwind warning in VSCode",
     url: "/writings/fix-unknown-at-rule-tailwind",
   },
   {
@@ -18,12 +18,12 @@ const posts = [
     url: "/writings/always-show-scrollbars",
   },
   {
-    title: "How to fix incorrect time when dual booting",
-    url: "/writings/fix-wrong-time-dual-boot",
+    title: "Adjust incorrect time when dual booting",
+    url: "/writings/adjust-incorrect-time-dual-boot",
   },
   {
-    title: "How to fix USB drive split into multiple partitions",
-    url: "/writings/fix-usb-multiple-partitions",
+    title: "Repair USB drive split into multiple partitions",
+    url: "/writings/repair-usb-multiple-partitions",
   },
 ];
 
