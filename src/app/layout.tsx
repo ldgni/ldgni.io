@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
@@ -45,7 +46,9 @@ export default function RootLayout({
           className={`${inter.className} bg-light text-dark antialiased dark:bg-dark dark:text-light`}>
           <Container>
             <Header />
-            <main>{children}</main>
+            <main>
+              {children} <Analytics />
+            </main>
             <Footer />
           </Container>
         </body>
