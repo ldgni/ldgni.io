@@ -18,10 +18,6 @@ const posts = [
     url: "/writings/always-show-scrollbars",
   },
   {
-    title: "Adjust incorrect time when dual booting",
-    url: "/writings/adjust-incorrect-time-dual-boot",
-  },
-  {
     title: "Repair USB drive split into multiple partitions",
     url: "/writings/repair-usb-multiple-partitions",
   },
