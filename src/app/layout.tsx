@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s - Luca Di Gianni",
   },
   description:
-    "I'm an IT technician and developer focused on creating effective and optimal solutions. My interests revolve around emerging technologies, web development, system optimization and cybersecurity.",
+    "Luca Di Gianni is an IT technician and developer who builds solutions for the digital world.",
 };
 
 const jsonLd: WithContext<WebSite> = {
