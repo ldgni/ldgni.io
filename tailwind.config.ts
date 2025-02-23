@@ -12,10 +12,13 @@ export default {
       container: {
         center: true,
       },
-      colors: {
-        light: "#f2f2f2",
+      backgroundColor: {
+        light: "#fcfcfc",
         dark: "#1a1a1a",
-        accent: "#f98f78",
+      },
+      textColor: {
+        light: "#e5e5e5",
+        dark: "#3a3a3a",
       },
     },
   },
