@@ -24,3 +24,15 @@ article h1 {
 article time {
   @apply text-neutral-400 dark:text-neutral-600;
 }
+
+/* PROJECTS */
+
+.logo,
+.external {
+  @apply transition-transform duration-300;
+}
+
+a:hover .logo,
+a:hover .external {
+  @apply scale-110;
+}

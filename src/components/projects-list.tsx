@@ -1,7 +1,8 @@
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
-import MoodLogo from "../../public/images/mood.png";
-import PulseLogo from "../../public/images/pulse.png";
+import moodLogo from "../../public/images/mood.png";
+import pulseLogo from "../../public/images/pulse.png";
 
 const projects = [
   {
@@ -9,16 +10,14 @@ const projects = [
     name: "Pulse",
     url: "https://pulse-live.vercel.app/",
     description: "Web app tracking PSG's performance",
-    category: "web",
-    logo: PulseLogo,
+    logo: pulseLogo,
   },
   {
     id: 2,
     name: "Mood",
     url: "https://mood-live.netlify.app/",
     description: "Brochure website of an ice-cream shop",
-    category: "web",
-    logo: MoodLogo,
+    logo: moodLogo,
   },
 ];
 
@@ -30,17 +29,21 @@ export default function ProjectsList() {
           <a
             href={project.url}
             target="_blank"
-            className="block rounded-lg px-4 py-2 opacity-75 saturate-0 transition duration-300 hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:hover:bg-neutral-800">
+            className="block rounded-lg border border-neutral-300 bg-neutral-100 px-4 py-2 opacity-75 saturate-0 transition duration-300 hover:bg-neutral-200 hover:opacity-100 hover:saturate-100 dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
-              <Image src={project.logo} alt={project.name} className="size-8" />
+              <Image
+                src={project.logo}
+                alt={project.name}
+                className="logo size-8"
+              />
               <div>
                 <h3 className="font-semibold">{project.name}</h3>
                 <p className="text-neutral-700 dark:text-neutral-300">
                   {project.description}
                 </p>
               </div>
-              <div className="ml-auto rounded-full bg-neutral-300 px-2 py-1 text-xs text-neutral-800 dark:bg-neutral-700 dark:text-neutral-300">
-                {project.category}
+              <div className="mb-auto ml-auto">
+                <ExternalLink className="external size-4 sm:size-5" />
               </div>
             </div>
           </a>
