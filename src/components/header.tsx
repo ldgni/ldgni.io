@@ -16,24 +16,24 @@ export default function Header() {
   return (
     <header>
       <div className="mb-8 flex items-center justify-between">
-        <h1 className="text-lg font-extrabold sm:text-xl">Luca Di Gianni</h1>
+        <h1 className="text-lg font-semibold sm:text-xl">Luca Di Gianni</h1>
         <div className="flex gap-2">
           <a
             href="https://github.com/ldgni"
             target="_blank"
             aria-label="Luca Di Gianni's GitHub profile"
-            className="rounded-lg p-1 text-neutral-500 transition-colors duration-300 hover:bg-neutral-200 hover:text-dark sm:p-2 dark:hover:bg-neutral-800 dark:hover:text-light">
+            className="rounded-lg p-1 text-neutral-500 transition-colors hover:bg-neutral-200 hover:text-dark sm:p-2 dark:hover:bg-neutral-800 dark:hover:text-light">
             <Github />
           </a>
           <a
             href="mailto:luca.dgni@gmail.com"
             aria-label="Send an email to Luca Di Gianni"
-            className="rounded-lg p-1 text-neutral-500 transition-colors duration-300 hover:bg-neutral-200 hover:text-dark sm:p-2 dark:hover:bg-neutral-800 dark:hover:text-light">
+            className="rounded-lg p-1 text-neutral-500 transition-colors hover:bg-neutral-200 hover:text-dark sm:p-2 dark:hover:bg-neutral-800 dark:hover:text-light">
             <Mail />
           </a>
         </div>
       </div>
-      <nav className="mb-8 font-semibold sm:text-lg">
+      <nav className="mb-8 font-medium sm:text-lg">
         <ul className="flex gap-8">
           {navItems.map((link) => (
             <li key={link.href}>
@@ -41,8 +41,8 @@ export default function Header() {
                 href={link.href}
                 className={`${
                   pathname === link.href
-                    ? "underline decoration-dark underline-offset-8 dark:decoration-light"
-                    : "opacity-75 transition-opacity hover:opacity-100"
+                    ? "underline decoration-[#f98f78] decoration-2 underline-offset-8"
+                    : "text-neutral-500 transition-colors hover:text-dark dark:hover:text-light"
                 } `}>
                 {link.label}
               </Link>
