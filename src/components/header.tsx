@@ -41,7 +41,7 @@ export default function Header() {
                 href={link.href}
                 className={`${
                   pathname === link.href
-                    ? "underline decoration-[#f98f78] decoration-2 underline-offset-8"
+                    ? "underline decoration-accent decoration-2 underline-offset-8"
                     : "text-neutral-500 transition-colors hover:text-dark dark:hover:text-light"
                 } `}>
                 {link.label}

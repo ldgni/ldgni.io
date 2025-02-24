@@ -20,6 +20,9 @@ export default {
         light: "#e5e5e5",
         dark: "#3a3a3a",
       },
+      textDecorationColor: {
+        accent: "#f98f78",
+      },
     },
   },
   plugins: [typography],
