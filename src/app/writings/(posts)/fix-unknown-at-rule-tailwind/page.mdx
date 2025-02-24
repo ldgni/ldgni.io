@@ -6,9 +6,9 @@ export const metadata = {
   title: "Fix unknown at rule @tailwind warning in VSCode",
 };
 
-<h1>Fix unknown at rule @tailwind warning in VSCode</h1>
+# Fix unknown at rule @tailwind warning in VSCode
 
-<hr />
+<time dateTime="2024-06">Jun 2024</time>
 
 When working with Tailwind CSS in VSCode, you might encounter the "**Unknown at rule @tailwind**" warning. This happens because VS Code’s default CSS support doesn’t recognize custom at-rules like @tailwind.
 
@@ -19,7 +19,7 @@ When working with Tailwind CSS in VSCode, you might encounter the "**Unknown at 
   priority
 />
 
-<h2>Solution 1</h2>
+## Solution 1
 
 You can install the <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank">Tailwind CSS IntelliSense</a> extension to fix this issue. This extension provides enhanced Tailwind CSS support for VS Code. Once the extension is installed, you should configure your `settings.json` file to associate CSS files with Tailwind.
 
@@ -29,7 +29,7 @@ You can install the <a href="https://marketplace.visualstudio.com/items?itemName
   }
 ```
 
-<h2>Solution 2</h2>
+## Solution 2
 
 Another way to fix this issue is to configure VSCode to simply ignore the Unknown at Rules warning. You can do this by adding the following line to your `settings.json` file:
 

@@ -5,3 +5,22 @@
 html {
   scrollbar-gutter: stable;
 }
+
+/* WRITINGS */
+
+article {
+  @apply prose dark:prose-invert;
+}
+
+article h1,
+article h2 {
+  @apply text-lg font-semibold;
+}
+
+article h1 {
+  @apply mb-0;
+}
+
+article time {
+  @apply text-neutral-400 dark:text-neutral-600;
+}
