@@ -14,9 +14,9 @@ export default function Clock() {
   }, []);
 
   return (
-    <span>
+    <small>
       {time.toLocaleString("en-US", { month: "short", day: "numeric" })},{" "}
       {time.toLocaleTimeString("en-US", { hour12: false })}
-    </span>
+    </small>
   );
 }
