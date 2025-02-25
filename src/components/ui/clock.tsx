@@ -14,9 +14,9 @@ export default function Clock() {
   }, []);
 
   return (
-    <small>
+    <time dateTime={time.toISOString()} suppressHydrationWarning>
       {time.toLocaleString("en-US", { month: "short", day: "numeric" })},{" "}
       {time.toLocaleTimeString("en-US", { hour12: false })}
-    </small>
+    </time>
   );
 }
