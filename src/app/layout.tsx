@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en">
         <head>
           <script
             type="application/ld+json"
