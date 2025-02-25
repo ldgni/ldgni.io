@@ -9,7 +9,7 @@ html {
 /* WRITINGS */
 
 article {
-  @apply prose dark:prose-invert;
+  @apply prose dark:prose-invert prose-p:text-dark dark:prose-p:text-light;
 }
 
 article h1,

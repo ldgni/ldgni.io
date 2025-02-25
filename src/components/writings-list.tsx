@@ -35,7 +35,7 @@ export default function WritingsList() {
         <li key={post.url}>
           <Link
             href={post.url}
-            className="flex flex-col gap-2 rounded-lg border border-neutral-300 bg-neutral-100 p-3 transition-colors duration-300 hover:bg-neutral-200 sm:flex-row sm:justify-between dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-800">
+            className="flex flex-col gap-2 rounded-lg border border-neutral-300 bg-neutral-100 p-3 opacity-75 transition-colors duration-300 hover:bg-neutral-200 hover:opacity-100 sm:flex-row sm:justify-between dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-800">
             <h2>{post.title}</h2>
             <time
               className="text-neutral-400 dark:text-neutral-600"
