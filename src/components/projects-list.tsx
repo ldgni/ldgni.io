@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     name: "Mood",
-    url: "https://mood-live.netlify.app/",
+    url: "https://mood-live.vercel.app/",
     description: "Brochure website of an ice-cream shop",
     logo: moodLogo,
   },
