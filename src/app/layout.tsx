@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html lang="en">
+      <html lang="en" className="overflow-y-scroll">
         <head>
           <script
             type="application/ld+json"
