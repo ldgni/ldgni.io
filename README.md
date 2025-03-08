@@ -31,7 +31,3 @@ npm run dev
 ## Contributing
 
 Pull requests are appreciated. For major changes, please open an issue first.
-
-## License
-
-This project is licensed under the terms of the [MIT License](LICENSE).
