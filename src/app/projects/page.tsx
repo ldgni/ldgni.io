@@ -28,7 +28,7 @@ export default function ProjectsPage() {
           <a
             href={project.url}
             target="_blank"
-            className="group block rounded-lg border border-neutral-200 px-3 py-2 text-neutral-600 saturate-0 transition hover:border-neutral-300 hover:bg-neutral-200 hover:text-neutral-900 hover:saturate-100 dark:border-neutral-800 dark:text-neutral-400 dark:hover:border-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-neutral-100">
+            className="group block rounded-lg border border-neutral-300 px-3 py-2 saturate-0 transition hover:bg-neutral-200 hover:saturate-100 dark:border-neutral-700 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
               <Image
                 src={project.logo}
@@ -38,10 +38,14 @@ export default function ProjectsPage() {
                 className="size-8 transition-transform group-hover:scale-105"
               />
               <div className="min-w-0">
-                <h2 className="font-medium">{project.name}</h2>
-                <p className="truncate">{project.description}</p>
+                <h2 className="font-medium text-neutral-600 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">
+                  {project.name}
+                </h2>
+                <p className="truncate text-neutral-500 group-hover:text-neutral-700 dark:group-hover:text-neutral-300">
+                  {project.description}
+                </p>
               </div>
-              <ExternalLink className="mb-auto ml-auto size-4 transition-transform group-hover:scale-105" />
+              <ExternalLink className="mb-auto ml-auto size-4 text-neutral-500 transition-transform group-hover:scale-105 group-hover:text-neutral-700 dark:group-hover:text-neutral-300" />
             </div>
           </a>
         </li>

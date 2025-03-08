@@ -55,7 +55,7 @@ export default function Header() {
                 className={`${
                   pathname === link.href
                     ? "underline decoration-2 underline-offset-8"
-                    : "text-neutral-500 transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
+                    : "text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
                 } `}>
                 {link.label}
               </Link>

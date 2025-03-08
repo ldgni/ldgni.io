@@ -11,5 +11,5 @@ html {
 }
 
 article time {
-  @apply text-neutral-400 dark:text-neutral-600;
+  @apply text-neutral-500;
 }
