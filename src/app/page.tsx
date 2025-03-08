@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div className="mb-8 flex flex-col gap-6">
+    <div className="space-y-6">
       <p>
         I&apos;m an IT technician and developer focused on creating effective
         and optimal solutions.

@@ -16,14 +16,19 @@ export default function Clock() {
     return () => clearInterval(interval);
   }, []);
 
+  const formattedDate = time.toLocaleString("en-US", {
+    month: "short",
+    day: "numeric",
+  });
+  const formattedTime = time.toLocaleTimeString("en-US", { hour12: false });
+
   if (!isMounted) {
-    return <time>...</time>; // Or return null or a skeleton
+    return <time>...</time>;
   }
 
   return (
-    <time dateTime={time.toISOString()}>
-      {time.toLocaleString("en-US", { month: "short", day: "numeric" })},{" "}
-      {time.toLocaleTimeString("en-US", { hour12: false })}
+    <time dateTime={time.toISOString()} aria-live="polite">
+      {formattedDate}, {formattedTime}
     </time>
   );
 }

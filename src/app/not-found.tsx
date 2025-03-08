@@ -1,15 +1,3 @@
-import { Link } from "next-view-transitions";
-
 export default function NotFoundPage() {
-  return (
-    <>
-      <h2>This page doesn&apos;t exist.</h2>
-      <span>&rarr; &nbsp;</span>
-      <Link
-        href="/"
-        className="underline underline-offset-4 transition-opacity duration-300 hover:opacity-75">
-        Go back home
-      </Link>
-    </>
-  );
+  return <p>This page doesn&apos;t exist.</p>;
 }
