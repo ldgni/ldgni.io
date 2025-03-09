@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} bg-neutral-100 text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100`}>
-        <div className="container max-w-xl sm:py-12 lg:py-20">
+        <div className="container max-w-lg sm:py-12 lg:py-20">
           <Header />
           {children}
           <Footer />
