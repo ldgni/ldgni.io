@@ -1,11 +1,6 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 
 @utility container {
   margin-inline: auto;
   padding: 1rem;
-}
-
-html {
-  scrollbar-gutter: stable;
 }

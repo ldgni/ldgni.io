@@ -23,7 +23,6 @@ const socialItems = [
 
 const navItems = [
   { href: "/", label: "About" },
-  { href: "/writings", label: "Writings" },
   { href: "/projects", label: "Projects" },
 ];
 
