@@ -28,7 +28,7 @@ export default function ProjectsPage() {
           <a
             href={project.url}
             target="_blank"
-            className="group block rounded-lg border border-neutral-300 px-3 py-2 saturate-0 transition hover:bg-neutral-200 hover:saturate-100 dark:border-neutral-700 dark:hover:bg-neutral-800">
+            className="group block rounded-lg border border-neutral-300 px-4 py-2 saturate-0 transition hover:bg-neutral-200 hover:saturate-100 dark:border-neutral-700 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
               <Image
                 src={project.logo}
