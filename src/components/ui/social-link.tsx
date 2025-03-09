@@ -1,4 +1,11 @@
-import { Social } from "@/lib/types";
+import { LucideIcon } from "lucide-react";
+
+export type Social = {
+  href: string;
+  ariaLabel: string;
+  Icon: LucideIcon;
+  isExternal?: boolean;
+};
 
 export default function SocialLink({
   href,
