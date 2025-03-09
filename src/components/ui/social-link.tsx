@@ -1,6 +1,6 @@
 import { LucideIcon } from "lucide-react";
 
-export type Social = {
+type Social = {
   href: string;
   ariaLabel: string;
   Icon: LucideIcon;
