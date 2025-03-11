@@ -1,5 +1,4 @@
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
+import { Activity, ExternalLink, IceCream } from "lucide-react";
 
 export const metadata = {
   title: "Projects",
@@ -10,13 +9,13 @@ const projects = [
     name: "Pulse",
     url: "https://pulse-live.vercel.app/",
     description: "Web app tracking PSG's performance",
-    logo: "/images/pulse.png",
+    icon: Activity,
   },
   {
     name: "Mood",
     url: "https://mood-live.vercel.app/",
     description: "Brochure website of an ice-cream shop",
-    logo: "/images/mood.png",
+    icon: IceCream,
   },
 ];
 
@@ -30,13 +29,7 @@ export default function ProjectsPage() {
             target="_blank"
             className="group block rounded-lg border border-neutral-300 px-4 py-2 saturate-0 transition hover:bg-neutral-200 hover:saturate-100 dark:border-neutral-700 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
-              <Image
-                src={project.logo}
-                alt={project.name}
-                width={32}
-                height={32}
-                className="size-8 transition-transform group-hover:scale-105"
-              />
+              <project.icon className="size-8 scale-95 text-neutral-500 transition group-hover:scale-100 group-hover:text-neutral-700 dark:group-hover:text-neutral-300" />
               <div className="min-w-0">
                 <h2 className="font-medium text-neutral-600 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">
                   {project.name}
@@ -45,7 +38,7 @@ export default function ProjectsPage() {
                   {project.description}
                 </p>
               </div>
-              <ExternalLink className="mb-auto ml-auto size-4 text-neutral-500 transition-transform group-hover:scale-105 group-hover:text-neutral-700 dark:group-hover:text-neutral-300" />
+              <ExternalLink className="mb-auto ml-auto size-4 scale-95 text-neutral-500 transition-transform group-hover:scale-100 group-hover:text-neutral-700 dark:group-hover:text-neutral-300" />
             </div>
           </a>
         </li>
