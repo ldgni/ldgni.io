@@ -1,9 +1,5 @@
 import { Activity, ExternalLink, IceCream } from "lucide-react";
 
-export const metadata = {
-  title: "Projects",
-};
-
 const projects = [
   {
     name: "Pulse",
