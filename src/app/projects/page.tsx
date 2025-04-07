@@ -1,4 +1,4 @@
-import { Activity, ExternalLink, IceCream } from "lucide-react";
+import { Activity, ExternalLink, IceCream, Keyboard } from "lucide-react";
 
 const projects = [
   {
@@ -12,6 +12,12 @@ const projects = [
     url: "https://mood-live.vercel.app/",
     description: "Brochure website of an ice-cream shop",
     icon: IceCream,
+  },
+  {
+    name: "Caps",
+    url: "https://caps-live.vercel.app/",
+    description: "E-commerce website selling keyboards",
+    icon: Keyboard,
   },
 ];
 
