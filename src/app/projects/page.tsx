@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Caps",
     url: "https://caps-live.vercel.app/",
-    description: "E-commerce website selling keyboards",
+    description: "E-commerce shop selling keyboards",
     icon: Keyboard,
   },
 ];
