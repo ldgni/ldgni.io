@@ -22,7 +22,7 @@ const projects = [
   {
     name: "Hyper",
     url: "https://hyper-live.vercel.app/",
-    description: "Bookmark management app for links",
+    description: "Bookmark management app",
     icon: Link,
   },
 ];
