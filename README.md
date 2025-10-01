@@ -19,13 +19,13 @@ cd ldgni.io
 3. Install dependencies
 
 ```sh
-pnpm install
+npm install
 ```
 
 4.  Start the development server
 
 ```sh
-pnpm run dev
+npm run dev
 ```
 
 ## Contributing
