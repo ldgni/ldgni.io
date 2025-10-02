@@ -7,6 +7,5 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/projects/",
     },
-    sitemap: "https://ldgni.io/sitemap.xml",
   };
 }
