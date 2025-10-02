@@ -4,6 +4,19 @@ import { Github, Mail } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const contactLinks = [
+  {
+    url: "https://github.com/ldgni",
+    label: "Visit Luca Di Gianni's GitHub profile",
+    icon: Github,
+  },
+  {
+    url: "mailto:luca.dgni@gmail.com",
+    label: "Send an email to Luca Di Gianni",
+    icon: Mail,
+  },
+];
+
 const navLinks = [
   { url: "/", name: "About" },
   { url: "/projects", name: "Projects" },
@@ -17,19 +30,16 @@ export default function Header() {
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-xl font-semibold">Luca Di Gianni</h1>
         <div className="flex gap-2">
-          <a
-            href="https://github.com/ldgni"
-            target="_blank"
-            aria-label="Visit Luca Di Gianni's GitHub profile"
-            className="rounded p-2 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
-            <Github />
-          </a>
-          <a
-            href="mailto:luca.dgni@gmail.com"
-            aria-label="Send an email to Luca Di Gianni"
-            className="rounded p-2 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
-            <Mail />
-          </a>
+          {contactLinks.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              target={link.url.startsWith("mailto:") ? undefined : "_blank"}
+              aria-label={link.label}
+              className="rounded p-2 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
+              <link.icon />
+            </a>
+          ))}
         </div>
       </div>
       <nav className="text-lg font-medium">
