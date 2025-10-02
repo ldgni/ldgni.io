@@ -27,7 +27,7 @@ export default function Clock() {
   }
 
   return (
-    <time dateTime={time.toISOString()} aria-live="polite">
+    <time dateTime={time.toISOString()}>
       {formattedDate}, {formattedTime}
     </time>
   );
