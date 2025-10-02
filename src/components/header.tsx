@@ -20,11 +20,13 @@ export default function Header() {
           <a
             href="https://github.com/ldgni"
             target="_blank"
+            aria-label="Visit Luca Di Gianni's GitHub profile"
             className="rounded p-2 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
             <Github />
           </a>
           <a
             href="mailto:luca.dgni@gmail.com"
+            aria-label="Send an email to Luca Di Gianni"
             className="rounded p-2 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
             <Mail />
           </a>
