@@ -35,7 +35,7 @@ export default function ProjectsPage() {
           <a
             href={project.url}
             target="_blank"
-            className="group block rounded border border-neutral-700 px-4 py-2 text-neutral-500 transition hover:bg-neutral-800 hover:text-neutral-300">
+            className="group block rounded-md border border-neutral-700 px-4 py-2 text-neutral-500 transition hover:bg-neutral-800 hover:text-neutral-300">
             <div className="flex items-center gap-4">
               <project.icon className="size-8 scale-95 transition-transform group-hover:scale-100" />
               <div className="min-w-0">
