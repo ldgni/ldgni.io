@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div className="space-y-6">
+    <main className="space-y-6">
       <p>
         I&apos;m an IT technician and developer focused on creating effective
         and optimal solutions.
@@ -14,6 +14,6 @@ export default function HomePage() {
         my knowledge and tackle challenges, be it through programming or
         technical problem-solving.
       </p>
-    </div>
+    </main>
   );
 }

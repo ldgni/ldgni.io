@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="bg-neutral-900 text-neutral-100 antialiased">
         <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
           <Header />
-          <main>{children}</main>
+          {children}
           <Footer />
         </div>
       </body>
