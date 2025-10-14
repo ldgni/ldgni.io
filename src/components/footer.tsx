@@ -1,4 +1,4 @@
-import Clock from "./clock";
+import Clock from "@/components/clock";
 
 export default function Footer() {
   return (
