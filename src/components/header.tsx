@@ -18,8 +18,14 @@ const contactLinks = [
 ];
 
 const navLinks = [
-  { url: "/", name: "About" },
-  { url: "/projects", name: "Projects" },
+  {
+    url: "/",
+    name: "About",
+  },
+  {
+    url: "/projects",
+    name: "Projects",
+  },
 ];
 
 export default function Header() {
