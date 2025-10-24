@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="bg-neutral-900 text-neutral-100 antialiased">
-        <ViewTransition>
+    <ViewTransition>
+      <html lang="en" className={inter.className}>
+        <body className="bg-neutral-900 text-neutral-100 antialiased">
           <div className="pointer-events-none fixed size-full">
             <div className="noise absolute inset-[-200%] bg-[url('/noise.webp')] opacity-[3%]" />
           </div>
@@ -31,8 +31,8 @@ export default function RootLayout({
             {children}
             <Footer />
           </div>
-        </ViewTransition>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ViewTransition>
   );
 }
