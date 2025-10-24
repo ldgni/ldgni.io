@@ -7,7 +7,7 @@
 1. Clone the repository
 
 ```sh
-git clone https://github.com/ldgni/ldgni.io
+git clone https://github.com/ldgni/ldgni.io.git
 ```
 
 2. Navigate inside the repository
