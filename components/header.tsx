@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <header className="mb-8">
       <div className="mb-6 flex items-center justify-between">
-        <h1 className="text-xl font-semibold">Luca Di Gianni</h1>
+        <h1 className="text-lg font-semibold">Luca Di Gianni</h1>
         <div className="flex gap-2">
           {contactLinks.map((link) => (
             <a
@@ -48,7 +48,7 @@ export default function Header() {
           ))}
         </div>
       </div>
-      <nav className="text-lg font-medium">
+      <nav className="font-medium">
         <ul className="flex gap-8">
           {navLinks.map((link) => (
             <li key={link.url}>
