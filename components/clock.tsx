@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Clock() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<Date | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -12,6 +12,8 @@ export default function Clock() {
     return () => clearInterval(interval);
   }, []);
 
+  if (!time) return "...";
+
   const formattedDate = time.toLocaleString("en-US", {
     month: "short",
     day: "numeric",
@@ -19,7 +21,7 @@ export default function Clock() {
   const formattedTime = time.toLocaleTimeString("en-US", { hour12: false });
 
   return (
-    <time dateTime={time.toISOString()} suppressHydrationWarning>
+    <time dateTime={time.toISOString()}>
       {formattedDate}, {formattedTime}
     </time>
   );
