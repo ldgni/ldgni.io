@@ -11,7 +11,7 @@ export default function Time() {
   }, []);
 
   return (
-    <time suppressHydrationWarning>
+    <time>
       {time.toLocaleString("en-US", {
         month: "short",
         day: "numeric",
