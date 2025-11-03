@@ -3,15 +3,18 @@
 import { useEffect, useState } from "react";
 
 export default function Time() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<Date | null>(null);
 
   useEffect(() => {
+    setTime(new Date()); // eslint-disable-line
     const timer = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
 
+  if (!time) return null;
+
   return (
-    <time suppressHydrationWarning>
+    <time>
       {time.toLocaleString("en-US", {
         month: "short",
         day: "numeric",
