@@ -1,4 +1,4 @@
-import { Activity, ExternalLink } from "lucide-react";
+import { Activity, Archive, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -6,6 +6,12 @@ const projects = [
     url: "https://pulse-live.vercel.app/",
     description: "Performance tracker for Paris Saint-Germain",
     icon: Activity,
+  },
+  {
+    name: "Stash",
+    url: "https://stash-live.vercel.app/",
+    description: "Bookmark management app",
+    icon: Archive,
   },
 ];
 
