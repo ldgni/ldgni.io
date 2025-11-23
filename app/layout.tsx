@@ -2,6 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ViewTransition } from "react";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className="bg-neutral-900 text-neutral-100 antialiased">
         <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
           <Header />
-          {children}
+          <ViewTransition>{children}</ViewTransition>
           <Footer />
         </div>
       </body>
