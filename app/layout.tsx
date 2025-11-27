@@ -22,8 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-neutral-900 text-neutral-100 antialiased">
-        <div className="pointer-events-none fixed inset-0 bg-[url('/grid.svg')] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]" />
-        <div className="relative mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
+        <div className="pointer-events-none fixed inset-0 -z-10 bg-[url('/grid.svg')] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]" />
+        <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
           <Header />
           <ViewTransition>{children}</ViewTransition>
           <Footer />
