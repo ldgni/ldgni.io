@@ -1,28 +1,21 @@
 "use client";
 
+import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 
 export default function Time() {
-  const [time, setTime] = useState<Date | null>(null);
+  const [time, setTime] = useState<string>("");
 
   useEffect(() => {
-    setTime(new Date()); // eslint-disable-line
-    const timer = setInterval(() => setTime(new Date()), 1000);
-    return () => clearInterval(timer);
+    const updateTime = () => {
+      setTime(dayjs().format("MMM D, HH:mm:ss"));
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  if (!time) return null;
-
-  return (
-    <time>
-      {time.toLocaleString("en-US", {
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false,
-      })}
-    </time>
-  );
+  return <>{time}</>;
 }
