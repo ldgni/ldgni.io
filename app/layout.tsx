@@ -22,8 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-neutral-900 text-neutral-100 antialiased`}>
-        <div className="pointer-events-none fixed inset-0 -z-10 bg-[url('/grid.svg')] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]" />
+        className={`${inter.className} bg-neutral-100 text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100`}>
         <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
           <Header />
           <ViewTransition>{children}</ViewTransition>

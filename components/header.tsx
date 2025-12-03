@@ -42,7 +42,7 @@ export default function Header() {
               href={link.url}
               target={link.url.startsWith("mailto:") ? undefined : "_blank"}
               aria-label={link.label}
-              className="rounded-md p-2 text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
+              className="rounded-md p-2 text-neutral-600 transition-colors hover:bg-neutral-200 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-100">
               <link.icon />
             </a>
           ))}
@@ -57,7 +57,7 @@ export default function Header() {
                 className={`${
                   pathname === link.url
                     ? "underline decoration-2 underline-offset-8"
-                    : "text-neutral-400 transition-colors hover:text-neutral-100"
+                    : "text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
                 } `}>
                 {link.name}
               </Link>
