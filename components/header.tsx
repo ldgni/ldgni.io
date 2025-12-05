@@ -1,5 +1,3 @@
-"use client";
-
 import { Github, Mail } from "lucide-react";
 
 import NavLinks from "@/components/nav-links";
