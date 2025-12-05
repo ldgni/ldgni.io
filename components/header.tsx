@@ -1,10 +1,10 @@
 "use client";
 
 import { Github, Mail } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-const contactLinks = [
+import NavLinks from "@/components/nav-links";
+
+const contactItems = [
   {
     url: "https://github.com/ldgni",
     label: "Visit Luca Di Gianni's GitHub profile",
@@ -17,54 +17,25 @@ const contactLinks = [
   },
 ];
 
-const navLinks = [
-  {
-    url: "/",
-    name: "About",
-  },
-  {
-    url: "/projects",
-    name: "Projects",
-  },
-];
-
 export default function Header() {
-  const pathname = usePathname();
-
   return (
     <header className="mb-8">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-lg font-semibold">Luca Di Gianni</h1>
         <div className="flex gap-2">
-          {contactLinks.map((link) => (
+          {contactItems.map((item) => (
             <a
-              key={link.url}
-              href={link.url}
-              target={link.url.startsWith("mailto:") ? undefined : "_blank"}
-              aria-label={link.label}
+              key={item.url}
+              href={item.url}
+              target={item.url.startsWith("mailto:") ? undefined : "_blank"}
+              aria-label={item.label}
               className="rounded-md p-2 text-neutral-600 transition-colors hover:bg-neutral-200 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-100">
-              <link.icon />
+              <item.icon />
             </a>
           ))}
         </div>
       </div>
-      <nav className="font-medium">
-        <ul className="flex gap-8">
-          {navLinks.map((link) => (
-            <li key={link.url}>
-              <Link
-                href={link.url}
-                className={`${
-                  pathname === link.url
-                    ? "underline decoration-2 underline-offset-8"
-                    : "text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
-                } `}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <NavLinks />
     </header>
   );
 }
