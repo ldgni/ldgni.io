@@ -21,7 +21,7 @@ export default function ProjectsPage() {
           <a
             href={project.url}
             target="_blank"
-            className="group block rounded-md border border-neutral-300 px-4 py-2 transition hover:bg-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-800">
+            className="group block rounded-md border border-neutral-300 bg-neutral-100 px-4 py-2 transition hover:bg-neutral-200 dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-800">
             <div className="flex items-center gap-4">
               <div className="min-w-0">
                 <h2>{project.name}</h2>
