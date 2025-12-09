@@ -21,15 +21,15 @@ export default function ProjectsPage() {
           <a
             href={project.url}
             target="_blank"
-            className="group block rounded-md border border-neutral-300 bg-neutral-100 px-4 py-2 transition hover:bg-neutral-200 dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-800">
+            className="hover:bg-accent group block rounded-md border px-4 py-2 transition-colors">
             <div className="flex items-center gap-4">
               <div className="min-w-0">
-                <h2>{project.name}</h2>
-                <p className="truncate text-neutral-600 dark:text-neutral-400">
+                <h2 className="font-medium">{project.name}</h2>
+                <p className="text-muted-foreground truncate">
                   {project.description}
                 </p>
               </div>
-              <ExternalLink className="mb-auto ml-auto size-4 shrink-0 scale-95 text-neutral-600 transition group-hover:scale-100 group-hover:text-neutral-900 dark:text-neutral-400 group-hover:dark:text-neutral-100" />
+              <ExternalLink className="text-muted-foreground group-hover:text-foreground mb-auto ml-auto size-4 shrink-0 transition-colors" />
             </div>
           </a>
         </li>

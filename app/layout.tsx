@@ -1,13 +1,14 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import { ViewTransition } from "react";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luca Di Gianni",
@@ -20,14 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} bg-neutral-100 text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100`}>
-        <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
-          <Header />
-          <ViewTransition>{children}</ViewTransition>
-          <Footer />
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geist.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
+            <Header />
+            <ViewTransition>{children}</ViewTransition>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

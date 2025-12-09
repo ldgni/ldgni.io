@@ -27,7 +27,7 @@ export default function Header() {
               href={item.url}
               target={item.url.startsWith("mailto:") ? undefined : "_blank"}
               aria-label={item.label}
-              className="rounded-md p-2 text-neutral-600 transition-colors hover:bg-neutral-200 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-neutral-100">
+              className="text-muted-foreground hover:bg-accent hover:text-accent-foreground rounded-md p-2 transition-colors">
               <item.icon />
             </a>
           ))}

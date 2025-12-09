@@ -1,7 +1,10 @@
 "use client";
 
+import { Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 const navItems = [
   {
@@ -18,7 +21,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <nav className="font-medium">
+    <nav className={`font-medium ${geistMono.className} lowercase`}>
       <ul className="flex gap-8">
         {navItems.map((item) => (
           <li key={item.url}>
@@ -27,7 +30,7 @@ export default function NavLinks() {
               className={
                 pathname === item.url
                   ? "underline decoration-2 underline-offset-8"
-                  : "text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+                  : "text-muted-foreground hover:text-foreground"
               }>
               {item.name}
             </Link>
