@@ -7,8 +7,8 @@ const projects = [
     description: "Performance tracker for Paris Saint-Germain",
   },
   {
-    name: "Stash",
-    url: "https://stash-live.vercel.app/",
+    name: "Hyper",
+    url: "https://hyper-live.vercel.app/",
     description: "Bookmark management app",
   },
 ];
