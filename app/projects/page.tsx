@@ -4,12 +4,17 @@ const projects = [
   {
     name: "Pulse",
     url: "https://pulse-live.vercel.app/",
-    description: "Performance tracker for Paris Saint-Germain",
+    description: "Performance tracker for Paris Saint-Germain FC",
   },
   {
     name: "Hyper",
     url: "https://hyper-live.vercel.app/",
-    description: "Bookmark management app",
+    description: "Bookmark manager",
+  },
+  {
+    name: "Blitz",
+    url: "https://blitz-live.vercel.app/",
+    description: "Typing test",
   },
 ];
 
