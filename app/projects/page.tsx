@@ -9,12 +9,12 @@ const projects = [
   {
     name: "Hyper",
     url: "https://hyper-live.vercel.app/",
-    description: "Bookmark manager",
+    description: "Bookmark manager to store web links",
   },
   {
     name: "Blitz",
     url: "https://blitz-live.vercel.app/",
-    description: "Typing test",
+    description: "Typing test measuring speed and accuracy",
   },
 ];
 
