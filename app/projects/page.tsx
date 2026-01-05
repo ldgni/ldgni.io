@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Scene",
     url: "https://scene-live.vercel.app/",
-    description: "Movie watchlist tracker",
+    description: "Movie watchlist collection",
   },
   {
     name: "Blitz",
