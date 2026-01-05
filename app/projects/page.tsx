@@ -12,6 +12,11 @@ const projects = [
     description: "Bookmark manager to store web links",
   },
   {
+    name: "Scene",
+    url: "https://scene-live.vercel.app/",
+    description: "Movie watchlist tracker",
+  },
+  {
     name: "Blitz",
     url: "https://blitz-live.vercel.app/",
     description: "Typing test measuring speed and accuracy",
