@@ -16,11 +16,6 @@ const projects = [
     url: "https://scene-live.vercel.app/",
     description: "Movie watchlist collection",
   },
-  {
-    name: "Blitz",
-    url: "https://blitz-live.vercel.app/",
-    description: "Typing test measuring speed and accuracy",
-  },
 ];
 
 export default function ProjectsPage() {
