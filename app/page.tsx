@@ -2,8 +2,8 @@ export default function HomePage() {
   return (
     <main className="space-y-6">
       <p>
-        I&apos;m an IT technician and developer focused on creating effective
-        and optimal solutions.
+        I&apos;m a developer and IT technician focused on creating effective and
+        optimal solutions.
       </p>
       <p>
         My interests revolve around emerging technologies, system
