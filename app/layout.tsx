@@ -1,14 +1,20 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { ViewTransition } from "react";
+import { Geist, Geist_Mono } from "next/font/google";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import { ThemeProvider } from "@/components/theme-provider";
 
-const geist = Geist({ subsets: ["latin"] });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Luca Di Gianni",
@@ -21,19 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geist.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange>
-          <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
-            <Header />
-            <ViewTransition>{children}</ViewTransition>
-            <Footer />
-          </div>
-        </ThemeProvider>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="font-sans antialiased">
+        <div className="mx-auto max-w-lg p-4 sm:py-12 lg:py-20">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

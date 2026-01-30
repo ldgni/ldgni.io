@@ -25,9 +25,9 @@ export default function Header() {
             <a
               key={item.url}
               href={item.url}
-              target={item.url.startsWith("mailto:") ? undefined : "_blank"}
+              target="_blank"
               aria-label={item.label}
-              className="text-muted-foreground hover:bg-accent hover:text-accent-foreground active:bg-accent active:text-accent-foreground rounded-md p-2 transition-colors">
+              className="text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg p-2 transition-colors">
               <item.icon />
             </a>
           ))}
