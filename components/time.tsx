@@ -1,6 +1,5 @@
 "use client";
 
-import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 
 export default function Time() {
@@ -8,7 +7,16 @@ export default function Time() {
 
   useEffect(() => {
     const updateTime = () => {
-      setTime(dayjs().format("MMM D, HH:mm:ss"));
+      const now = new Date();
+      const formatted = now.toLocaleString("en-US", {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false,
+      });
+      setTime(formatted);
     };
 
     updateTime();
