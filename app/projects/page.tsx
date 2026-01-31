@@ -21,17 +21,17 @@ const projectItems = [
 export default function ProjectsPage() {
   return (
     <ul className="space-y-4">
-      {projectItems.map((project) => (
-        <li key={project.url}>
+      {projectItems.map((item) => (
+        <li key={item.url}>
           <a
-            href={project.url}
+            href={item.url}
             target="_blank"
             className="group hover:bg-muted block rounded-lg border px-4 py-2 transition-colors">
             <div className="flex gap-4">
               <div className="min-w-0">
-                <h2 className="font-medium">{project.name}</h2>
+                <h2 className="font-medium">{item.name}</h2>
                 <p className="text-muted-foreground truncate">
-                  {project.description}
+                  {item.description}
                 </p>
               </div>
               <ExternalLink className="text-muted-foreground group-hover:text-foreground ml-auto size-4 shrink-0 transition-colors" />
