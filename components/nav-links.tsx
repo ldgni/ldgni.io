@@ -27,7 +27,7 @@ export default function NavLinks() {
               className={
                 pathname === item.url
                   ? "underline decoration-2 underline-offset-8"
-                  : "text-muted-foreground hover:text-foreground transition-colors"
+                  : "text-muted-foreground hover:text-foreground active:text-foreground focus-visible:text-foreground transition-colors"
               }>
               {item.name}
             </Link>

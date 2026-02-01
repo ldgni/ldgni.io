@@ -27,7 +27,7 @@ export default function Header() {
               href={item.url}
               target="_blank"
               aria-label={item.label}
-              className="text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg p-2 transition-colors">
+              className="text-muted-foreground hover:text-foreground hover:bg-muted active:text-foreground active:bg-muted focus-visible:text-foreground focus-visible:bg-muted rounded-lg p-2 transition-colors">
               <item.icon />
             </a>
           ))}

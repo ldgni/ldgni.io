@@ -26,7 +26,7 @@ export default function ProjectsPage() {
           <a
             href={item.url}
             target="_blank"
-            className="group hover:bg-muted block rounded-lg border px-4 py-2 transition-colors">
+            className="group hover:bg-muted active:bg-muted focus-visible:bg-muted block rounded-lg border px-4 py-2 transition-colors">
             <div className="flex gap-4">
               <div className="min-w-0">
                 <h2 className="font-medium">{item.name}</h2>
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
                   {item.description}
                 </p>
               </div>
-              <ExternalLink className="text-muted-foreground group-hover:text-foreground ml-auto size-4 shrink-0 transition-colors" />
+              <ExternalLink className="text-muted-foreground group-hover:text-foreground group-active:text-foreground group-focus-visible:text-foreground ml-auto size-4 shrink-0 transition-colors" />
             </div>
           </a>
         </li>
