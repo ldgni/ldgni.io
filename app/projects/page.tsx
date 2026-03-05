@@ -6,6 +6,11 @@ const projectItems = [
     url: "https://pulse-live.vercel.app/",
     description: "Performance tracker for Paris Saint-Germain FC",
   },
+  {
+    name: "Scene",
+    url: "https://scene-live.vercel.app/",
+    description: "Watchlist manager for movies and TV shows",
+  },
 ];
 
 export default function ProjectsPage() {
